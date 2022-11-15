@@ -14,6 +14,11 @@ College Management System Dashboard.
  <a href="#students">Students</a>
 </p>
 • <b>Dashboard</b> inclui cartões com totais, gráfico da evolução de alunos inscritos e alunos recentes.
+• <b>Account</b>
+• <b>Courses</b>
+• <b>Subjects</b>
+• <b>Teachers</b>
+• <b>Students</b>
 
 ### Features
 
