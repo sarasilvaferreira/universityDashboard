@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Dashboard da Faculdade - A minha conta</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <meta name="author" content="Sara Ferreira">
+    <!-- CSS style -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- CSS font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a>
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Faculdade</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/Courses/courses.html">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/subjects/subjects.html">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="title">Disciplinas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/teachers/teachers.html">
+                        <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                        <span class="title">Professores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/students/students.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Alunos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign up</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!--user img-->
+                <div class="user">
+                    <a href="account.html"><img src="img/user.png"></a>
+                </div>
+            </div>
+
+            <!-- details -->
+            <div class="details">
+                <!-- Personal Data -->
+                <div class="personalData">
+                    <div class="personalDataHeader">
+                        <h2>Dados pessoais</h2>
+                        <button onclick="activeForm()" id="editForm" class="btn">Editar</button>
+
+                    </div>
+                    <form class="personalDataForm">
+                        <label for="fullname">Nome Completo</label><br>
+                        <input type="text" id="formDisabled" name="fullname" value="Maria Teresa da Silva" disabled class="formDisabled"><br>
+
+                        <label for="codeEmployee">Nº de Funcionário</label><br>
+                        <input type="number" id="codeEmployee" name="codeEmployee" value="236946" disabled class="formDisabled"><br>
+
+                        <label for="post">Cargo</label><br>
+                        <input type="text" id="post" name="post" value="Administrativa financeira" disabled class="formDisabled"><br>
+
+                        <label for="address">Morada</label><br>
+                        <input type="text" id="address" name="address" value="Av. da República, 53, nº 4429-099" disabled class="formDisabled"><br>
+
+                        <label for="phone">Contato</label><br>
+                        <input type="number" id="phone" name="phone" value="919663452" disabled="disabled" class="formDisabled"><br>
+                        
+                        <input type="submit" value="Guardar" id="hidedBtn" class="hidedBtn">
+                    </form>
+                </div>
+
+                <!-- Password Changer -->
+                <div class="passwordChange">
+                    <div class="passwordChangeHeader">
+                        <h2>Modificar Password</h2>
+                    </div>
+                    <form class="passwordForm">
+                        <label for="oldPassword">Password antiga:</label><br>
+                        <input type="password" id="oldPassword" name="oldPassword" value="password"><br>
+
+                        <label for="newPassword">Nova Password:</label><br>
+                        <input type="password" id="newPassword" name="newPassword" placeholder="Escreva a sua nova password"><br>
+
+                        <label for="newPassword2">Confirmar Nova Password:</label><br>
+                        <input type="password" id="newPassword2" name="newPassword2"><br>
+
+                        <input type="submit" value="Alterar">
+                      </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- JS icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <script>
+        function activeForm() {
+            $(".formDisabled").prop('disabled', false);
+            $(".hidedBtn").show();
+        }
+    </script>
+
+</body>
+
+</html>

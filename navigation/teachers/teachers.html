@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Dashboard da Faculdade - Professores</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <meta name="author" content="Sara Ferreira">
+    <!-- CSS style -->
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <!-- CSS font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a>
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Faculdade</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/Courses/courses.html">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/subjects/subjects.html">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="title">Disciplinas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="teachers.html" class="menuList selected">
+                        <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                        <span class="title">Professores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/students/students.html">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Alunos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign up</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- search-->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Pesquisar aqui">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!--user img-->
+                <div class="user">
+                    <a href="/account.html"><img src="/img/user.png"></a>
+                </div>
+            </div>
+
+            <!-- details -->
+            <div class="main-details">
+                <!-- details list -->
+                <div class="main-details-list">
+                    <div class="main-details-list-header">
+                        <h2>Professores</h2>
+                        <a href="addTeachers.html" class="btn">Adicionar</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>Nº de Funcionário</td>
+                                <td>Nome</td>
+                                <td>Data de Nascimento</td>
+                                <td>Salário</td>
+                                <td>Alterar</td> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_woman.png"></div></td> 
+                                <td>01456</td>
+                                <td>Maria Oliveira Silva</td>
+                                <td>15/01/1943</td>
+                                <td>€ 2050</td>
+                                <td><a href="editTeachers.html"><ion-icon name="create-outline"></ion-icon></a></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_woman.png"></div></td> 
+                                <td>01456</td>
+                                <td>Vanessa Ferreira</td>
+                                <td>24/10/1973</td>
+                                <td>€ 3000</td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_man.png"></div></td> 
+                                <td>01456</td>
+                                <td>Joaquim Alves</td>
+                                <td>15/05/1964</td>
+                                <td>€ 1900</td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_man.png"></div></td> 
+                                <td>01456</td>
+                                <td>José Ferreira</td>
+                                <td>14/02/1970</td>
+                                <td>€ 2400</td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_man.png"></div></td> 
+                                <td>01456</td>
+                                <td>Paulo Castro</td>
+                                <td>31/03/1960</td>
+                                <td>€ 2050</td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_woman.png"></div></td> 
+                                <td>01456</td>
+                                <td>Isabel Rodrigues</td>
+                                <td>23/09/1975</td>
+                                <td>€ 2990</td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination-center">
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+   
+
+
+
+    <!-- JS icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/./js/navigation.js"></script>
+
+
+</body>
+
+</html>

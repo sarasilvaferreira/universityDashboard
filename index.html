@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Dashboard da Faculdade</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <meta name="author" content="Sara Ferreira">
+    <!-- CSS style -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- CSS fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul class="menu">
+                <li class="menuItem">
+                    <a>
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Faculdade</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="menuList">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="navigation/courses/courses.html" class="menuList">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/subjects/subjects.html" class="menuList">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="title">Disciplinas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="navigation/teachers/teachers.html" class="menuList">
+                        <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                        <span class="title">Professores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/students/students.html" class="menuList">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Alunos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign up</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- search-->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Pesquisar aqui">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!--user img-->
+                <div class="user">
+                    <a href="account.html"><img src="img/user.png"></a>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="cardBox">
+                <a href="navigation/Courses/courses.html" style="text-decoration:none"> 
+                    <div class="card">
+                        <div>
+                            <div class="value">20</div>
+                            <div class="cardName">Cursos a decorrer</div>
+                        </div>
+                        <div class="iconBx"><ion-icon name="settings-outline"></ion-icon></div>
+                    </div>
+                </a>
+
+                <a href="navigation/subjects/subjects.html" style="text-decoration:none">
+                    <div class="card">
+                        <div>
+                            <div class="value">120</div>
+                            <div class="cardName">Disciplinas</div>
+                        </div>
+                        <div class="iconBx"><ion-icon name="book-outline"></ion-icon></div>
+                    </div>
+                </a>
+
+                <a href="navigation/teachers/teachers.html" style="text-decoration:none">
+                    <div class="card">
+                        <div>
+                            <div class="value">630</div>
+                            <div class="cardName">Professores ativos</div>
+                        </div>
+                        <div class="iconBx"><ion-icon name="person-add-outline"></ion-icon></div>
+                    </div>
+                </a>
+
+                <a href="navigation/students/students.html" style="text-decoration:none">
+                    <div class="card">
+                        <div>
+                            <div class="value">2200</div>
+                            <div class="cardName">Alunos inscritos</div>
+                        </div>
+                        <div class="iconBx"><ion-icon name="people-outline"></ion-icon></div>
+                    </div>
+                </a>
+                
+            </div>
+
+
+            <!-- details -->
+            <div class="details">
+                <!-- charts -->
+                <div class="highlights">
+                    <div class="boxHeader">
+                        <h2>Evolução de alunos inscritos</h2>
+                    </div>
+                   <div>
+                        <canvas id="chartStudentsEvolution" style="width:100%;max-width:"></canvas>
+                   </div> 
+                </div>
+
+
+                <!-- New Students -->
+                <div class="recentStudents">
+                    <div class="boxHeader">
+                        <h2>Alunos recentes</h2>
+                    </div>
+
+                    <table>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="img/user_man.png"></div></td>
+                            <td><h4>André<br><span>Silva</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="img/user_woman.png"></div></td>
+                            <td><h4>Sara<br><span>Ferreira</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="img/user_woman.png"></div></td>
+                            <td><h4>Ana<br><span>Moreira</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="img/user_woman.png"></div></td>
+                            <td><h4>Diana<br><span>Castro</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="img/user_man.png"></div></td>
+                            <td><h4>Roberto<br><span>Costa</span></h4></td>
+                        </tr>
+                        <tr>
+                            <td width="60px"><div class="imgBx"><img src="img/user_woman.png"></div></td>
+                            <td><h4>Georgina<br><span>Rodriguez</span></h4></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- JS icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="js/chartStudents.js"></script>
+
+</body>
+
+</html>

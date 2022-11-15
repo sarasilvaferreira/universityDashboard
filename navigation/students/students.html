@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Dashboard da Faculdade - Alunos</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <meta name="author" content="Sara Ferreira">
+    <!-- CSS style -->
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <!-- CSS fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a>
+                        <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                        <span class="title">Faculdade</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/index.html">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/Courses/courses.html">
+                        <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="title">Cursos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/subjects/subjects.html">
+                        <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+                        <span class="title">Disciplinas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/navigation/teachers/teachers.html">
+                        <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                        <span class="title">Professores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="students.html" class="menuList selected">
+                        <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                        <span class="title">Alunos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sign up</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!--user img-->
+                <div class="user">
+                    <a href="/account.html"><img src="/img/user.png"></a>
+                </div>
+            </div>
+
+            <!-- details -->
+            <div class="main-details">
+                <!-- students details list -->
+                <div class="main-details-list">
+                    <div class="main-details-list-header">
+                        <h2>Alunos</h2>
+                        <a href="addStudents.html" class="btn">Adicionar</a>
+                    </div>
+                    <div class="filter-container">
+                        <form>
+                            <input type="text" id="nameStudent" name="nameStudent" placeholder="Nome do aluno">
+                            <input type="date" id="birthdayDateStudent" name="birthdayDateStudent" placeholder="Data de nascimento">
+                            <input type="number" id="matriculation" name="matriculation" placeholder="Nº da Matrícula">
+                            <button type="submit"><ion-icon name="search-outline" class="iconSubmit"></ion-icon></button>
+                        </form>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>Nome</td>
+                                <td>Data de Nascimento</td>
+                                <td>Nº de Matrícula</td>
+                                <td>Estado</td>
+                                <td>Editar</td>  
+                                <td>Notas</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_man.png"></div></td> 
+                                <td>André Silva</td>
+                                <td>28/06/1995</td>
+                                <td>0293642</td>
+                                <td><span class="status payed">Inscrito Pago</span></td>
+                                <td><a href="editStudents.html"><ion-icon name="create-outline"></ion-icon></a></td>
+                                <td><button id="gradeBtn" class="btnGrades"><ion-icon name="bar-chart-outline"></ion-icon></button></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_woman.png"></div></td> 
+                                <td>Sara Ferreira</td>
+                                <td>29/10/1994</td>
+                                <td>0293641</td>
+                                <td><span class="status payed">Inscrito Pago</span></td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                                <td><button id="" class="btnGrades"><ion-icon name="bar-chart-outline"></ion-icon></button></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_woman.png"></div></td> 
+                                <td>Ana Moreira</td>
+                                <td>15/01/2000</td>
+                                <td>0293640</td>
+                                <td><span class="status pending">Falta documentação</span></td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                                <td><button id="" class="btnGrades"><ion-icon name="bar-chart-outline"></ion-icon></button></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_woman.png"></div></td> 
+                                <td>Diana Castro</td>
+                                <td>14/02/1999</td>
+                                <td>0293639</td>
+                                <td><span class="status annulled">Anulado</span></td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                                <td><a><ion-icon name="close-circle-outline"></ion-icon></td>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_man.png"></div></td> 
+                                <td>Roberto Costa</td>
+                                <td>31/03/2001</td>
+                                <td>0293638</td>
+                                <td><span class="status annulled">Anulado</span></td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                                <td><a><ion-icon name="close-circle-outline"></ion-icon></td>
+                            </tr>
+                            <tr>
+                                <td width="60px"><div class="imguser"><img src="/img/user_woman.png"></div></td> 
+                                <td>Georgina Rodriguez</td>
+                                <td>23/09/2002</td>
+                                <td>0293637</td>
+                                <td><span class="status payment">A aguardar pagamento</span></td>
+                                <td><a href="#"><ion-icon name="create-outline"></ion-icon></a></td>
+                                <td><button id="" class="btnGrades"><ion-icon name="bar-chart-outline"></ion-icon></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="pagination-center">
+                        <div class="pagination">
+                            <a href="#">&laquo;</a>
+                            <a href="#" class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">&raquo;</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Modal para abrir as notas -->
+    <div id="gradeModal" class="gradesModal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+                <div class="modal-content-header">
+                    <h2>André Silva</h2>
+                    <h3>0293642</h3>  
+                </div>
+                <div class="courseTitle">
+                    <h3>Licenciatura Gestão de Marketing</h3>
+                </div>
+                <div class="grid-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">1º semestre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Disciplina</td>
+                                <td>Nota</td>
+                            </tr>
+                            <tr>
+                                <td>Matemática I</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Contabilidade Financeira e Analítica</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>MicroEconomia</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Gestão empresarial</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Direito Comerical</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Marketing Empresarial</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">2º semestre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Disciplina</td>
+                                <td>Nota</td>
+                            </tr>
+                            <tr>
+                                <td>Matemática II</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Macro Economia</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>Contabilidade Financeira e Analítica</td>
+                                <td>15</td>
+                            </tr>
+                            <tr>
+                                <td>Tecnologias da Informação</td>
+                                <td>15</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">3º semestre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Disciplina</td>
+                                <td>Nota</td>
+                            </tr>
+                            <tr>
+                                <td>Marketing Digital</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>Contabilidade Financeira e Analítica</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">4º semestre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Disciplina</td>
+                                <td>Nota</td>
+                            </tr>
+                            <tr>
+                                <td>Marketing Digital</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- JS icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- JS Modal -->
+    <script>
+        var modal = document.getElementById("gradeModal");
+        var btn = document.getElementById("gradeBtn");
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        }
+    </script>
+
+</body>
+
+</html>
