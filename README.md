@@ -3,7 +3,7 @@
 College Management System Dashboard.
 
 <img src="https://img.shields.io/static/v1?label=HTML&message=Dashboard&color=#E34F26c1&style=for-the-badge&logo=html"/>
-
+<img alt="GitHub" src="https://img.shields.io/github/license/sarasilvaferreira/universityDashboard">
 
 ### Features
 
