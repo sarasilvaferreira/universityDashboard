@@ -14,8 +14,8 @@ College Management System Dashboard.
  <a href="#students">Students</a>
 </p>
 • <b>Dashboard</b> inclui cartões com totais, gráfico da evolução de alunos inscritos e alunos recentes.
-• <b>Account</b>
-• <b>Courses</b>
+• <b>Account</b> inclui informação do Nome, Nº de funcionário, Morada e Contato. Com opção de editar os dados pessoais assim como a password de login.
+• <b>Courses</b> inclui opção de adicionar novos cursos ou editar e filtrar os cursos existentes. Curso tem os seguintes dados: Código do curso, nome do curso, duração e nível.
 • <b>Subjects</b>
 • <b>Teachers</b>
 • <b>Students</b>
@@ -47,7 +47,7 @@ Through the button: <a href="">Watch</a>
 ### Author
 ---
 
-<a href="https://sara.digi2code.pt">
+<a href="https://sara.digi2code.pt" target="_blank">
  <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
  <br /><br />
  <sub><b>Sara Ferreira</b></sub></a> <a href="https://sara.digi2code.pt" title="porfólio" target="_blank">🚀</a>
