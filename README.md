@@ -4,6 +4,19 @@ College Management System Dashboard.
 
 <img src="https://img.shields.io/static/v1?label=HTML&message=Dashboard&color=#E34F26c1&style=for-the-badge&logo=html"/>
 
+
+### Features
+
+- [x] Registering and Editing Courses
+- [x] Registering and Editing Subjects
+- [x] Teacher registration and editing
+- [x] Student Registration and Editing
+
+<h4 align="center"> 
+	🚧  HTML, CSS e JS 🚀 Under construction...  🚧
+</h4>
+
+
 ## Table of Contents
 <p align="center">
  <a href="#index">Dashboard</a> •
@@ -13,46 +26,39 @@ College Management System Dashboard.
  <a href="#teachers">Teachers</a> • 
  <a href="#students">Students</a>
 </p>
-• <b>Dashboard</b> inclui cartões com totais, gráfico da evolução de alunos inscritos e alunos recentes.
-• <b>Account</b> inclui informação do Nome, Nº de funcionário, Morada e Contato. Com opção de editar os dados pessoais assim como a password de login.
-• <b>Courses</b> inclui opção de adicionar novos cursos ou editar e filtrar os cursos existentes. Curso tem os seguintes dados: Código do curso, nome do curso, duração e nível.
-• <b>Subjects</b>
-• <b>Teachers</b>
-• <b>Students</b>
+• <b>Dashboard</b> inclui cartões com totais, gráfico da evolução de alunos inscritos e alunos recentes.<br>
+• <b>Account</b> inclui informação do Nome, Nº de funcionário, Morada e Contato. Com opção de editar os dados pessoais assim como a password de login.<br>
+• <b>Courses</b> inclui opção de adicionar novos cursos ou editar e filtrar os cursos existentes. Curso tem os seguintes dados: Código do curso, nome do curso, duração e nível.<br>
+• <b>Subjects</b> inclui opção de adicionar novas disciplinas ou editar e filtrar as disciplinas existentes. Disciplina tem os seguintes dados: código da disciplina, nome da disciplina, cursos onde est+a incluída e professores que lecionam.<br>
+• <b>Teachers</b> inclui opção de adicionar novos professores ou editar e filtrar os dados dos professores existentes. Professores tem os seguintes dados: código de funcionário, nome do professor, data de nascimento e salário.<br>
+• <b>Students</b>inclui opção de adicionar novos alunos ou editar e filtrar os dados dos alunos existentes. Alunos tem os seguintes dados: nome do aluno, nº de matrícula e curso inscrito.<br>
 
-### Features
-
-- [x] Registering and Editing Courses
-- [x] Registering and Editing Subjects
-- [x] Teacher registration and editing
-- [x] Student Registration and Editing
 
 ## Tecnologias
 As seguintes tecnologias foram usadas na construção do projeto:
-🛠 HTML
-🛠 CSS
-🛠 JS
-🛠 JQuery
-🛠 Chat JS
+🛠 HTML<br>
+🛠 CSS<br>
+🛠 JS<br>
+🛠 JQuery<br>
+🛠 Chat JS<br>
 
-### Visualization
+
+## Visualization
 
 Through the button: <a href="">Watch</a>
-
-<h4 align="center"> 
-	🚧  HTML, CSS e JS 🚀 Under construction...  🚧
-</h4>
 
 
 ### Author
 ---
 
 <a href="https://sara.digi2code.pt" target="_blank">
- <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
- <br /><br />
- <sub><b>Sara Ferreira</b></sub></a> <a href="https://sara.digi2code.pt" title="porfólio" target="_blank">🚀</a>
+<img src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairStraight&accessoriesType=Round&hairColor=BrownDark&facialHairType=Blank&clotheType=Hoodie&clotheColor=Gray01&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light'width="100px;/>
+ <br><br><br>
+ 
+ 
+<sub><b>Sara Ferreira</b></sub></a> <a href="https://sara.digi2code.pt" title="porfólio" target="_blank">🚀</a>
 
 Made with ❤️ by Sara Ferreira 👋🏽 Get in touch!
 
-[![Linkedin Badge](https://img.shields.io/twitter/url?label=sarasilvaferreira&style=social&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsarasilvaferreira%2F")](https://www.linkedin.com/in/sarasilvaferreira/) 
+[![Linkedin Badge](https://img.shields.io/badge/LINKEDIN-blue)](https://www.linkedin.com/in/sarasilvaferreira/) 
 [![Gmail Badge](https://img.shields.io/badge/GMAIL-blue)](mailto:sarasferreira10@gmail.com)
