@@ -45,7 +45,7 @@ As seguintes tecnologias foram usadas na construção do projeto:
 
 ## Visualization
 
-Through the button: <a href="https://sarasilvaferreira.github.io/universityDashboard/">Watch</a>
+Through the button: <a href="https://university-dashboard-zeta.vercel.app/index.html">Watch</a>
 
 
 ### Author
